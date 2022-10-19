@@ -1,11 +1,11 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "7636338a3a1e41a6a1c225fc5dcdf5c84249b3270cfc5d0de017f50152b93806"
+            "sha256": "6a9b94762b272545bda01be1c0f27b5695c0723d85eb108a6ca070c322eee02d"
         },
         "pipfile-spec": 6,
         "requires": {
-            "python_version": "3.10"
+            "python_version": "3.9"
         },
         "sources": [
             {
@@ -29,7 +29,7 @@
                 "sha256:0d9c601124e5a6ba9712dbc60d9c53c21e34f5f641fe83002317394311bdce14",
                 "sha256:90c1a32f1d68f940488354e36370f6cca89f0f106db09518524c88d6ed83f382"
             ],
-            "markers": "python_full_version >= '3.6.0'",
+            "markers": "python_version >= '3.6'",
             "version": "==2022.9.24"
         },
         "charset-normalizer": {
@@ -39,6 +39,28 @@
             ],
             "markers": "python_full_version >= '3.6.0'",
             "version": "==2.1.1"
+        },
+        "fake-useragent": {
+            "hashes": [
+                "sha256:c104998b750eb097eefc28ae28e92d66397598d2cf41a31aa45d5559ef1adf35"
+            ],
+            "index": "pypi",
+            "version": "==0.1.11"
+        },
+        "geographiclib": {
+            "hashes": [
+                "sha256:8f441c527b0b8a26cd96c965565ff0513d1e4d9952b704bf449409e5015c77b7",
+                "sha256:ac400d672b8954b0306bca890b088bb8ba2a757dc8133cca0b878f34b33b2740"
+            ],
+            "version": "==1.52"
+        },
+        "geopy": {
+            "hashes": [
+                "sha256:58b7edf526b8c32e33126570b5f4fcdfaa29d4416506064777ae8d84cd103fdd",
+                "sha256:8f1f949082b964385de61fcc3a667a6a9a6e242beb1ae8972449f164b2ba0e89"
+            ],
+            "index": "pypi",
+            "version": "==2.2.0"
         },
         "idna": {
             "hashes": [
@@ -137,7 +159,7 @@
                 "sha256:3b2503d3c7084a42b1ebd08116e5f81aadfaea95863628c80a3b774a11b7c759",
                 "sha256:fc53893b3da2c33de295667a0e19f078c14bf86544af307354de5fcf12a3f30d"
             ],
-            "markers": "python_full_version >= '3.6.0'",
+            "markers": "python_version >= '3.6'",
             "version": "==2.3.2.post1"
         },
         "urllib3": {

@@ -7,8 +7,10 @@ name = "pypi"
 requests = "*"
 lxml = "*"
 beautifulsoup4 = "*"
+geopy = "*"
+fake-useragent = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.10"
+python_version = "3.9"
