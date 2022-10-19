@@ -47,27 +47,30 @@ response = requests.post(
 
 shops = response.json()['original']
 
-result_data = []
 
-for shop in shops:
+def create_result_data(shops, result_data=[]):
 
-    phones = []
-    working_hours = []
+    for shop in shops:
 
-    phones.append(shop['phone'])
-    working_hours.append(shop['schedule'])
-    address = shop['city'] + ', ' + shop['address']
-    location = DataBC().geocode(address)
-    latlon = [location.latitude, location.longitude]
+        phones = []
+        working_hours = []
 
-    result_data.append(dict(
-        address=address,
-        latlon=latlon,
-        phones=phones,
-        working_hours=working_hours,
-        name='Natura Siberica'
-    ))
-    break
+        phones.append(shop['phone'])
+        working_hours.append(shop['schedule'])
+        address = shop['city'] + ', ' + shop['address']
+        location = DataBC().geocode(address)
+        latlon = [location.latitude, location.longitude]
 
-result_data = json.dumps(result_data)
+        result_data.append(dict(
+            address=address,
+            latlon=latlon,
+            phones=phones,
+            working_hours=working_hours,
+            name='Natura Siberica'
+        ))
+
+    return result_data
+
+
+result_data = json.dumps(create_result_data(shops))
 print(result_data)
